@@ -1,8 +1,8 @@
 FROM gliderlabs/alpine:edge
 
-ENV slack_hook='https://hooks.slack.com/services/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'
+ENV slack_hook='https://hooks.slack.com/services/YOUR/HOOK/HERE'
 ENV relay_port=80
-ENV VIRTUAL_HOST='slack-relay.modius.io, slack-relay.dev'
+ENV VIRTUAL_HOST='slack-relay.dev'
 
 RUN apk add --update \
     python \
