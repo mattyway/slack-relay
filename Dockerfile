@@ -1,5 +1,7 @@
 FROM gliderlabs/alpine:edge
 
+MAINTAINER Geoff Bowers <modius@daemon.com.au>
+
 ENV SLACK_HOOK='https://hooks.slack.com/services/YOUR/HOOK/HERE'
 ENV RELAY_PORT=80
 ENV VIRTUAL_HOST='slack-relay.dev'
