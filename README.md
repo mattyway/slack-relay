@@ -2,7 +2,7 @@
 
 A simple relay of Docker Hub post build webhook payloads to a Slack Channel.
 
-(h/t https://github.com/matsengrp/relay)
+Available on Docker Hub at `daemonite/slack-relay:latest`. Configured via ENV variables.
 
 ## Installation
 
@@ -34,3 +34,5 @@ slack-relay:
 ## Building Locally
 
 If you have Vagrant installed, you can run up a local development environment for the container with `vagrant up slacker`
+
+(h/t https://github.com/matsengrp/relay)
