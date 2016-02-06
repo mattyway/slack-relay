@@ -13,9 +13,10 @@ headers = {'content-type': 'application/json'}
 
 def make_slack_post(docker_data):
     repo = docker_data['repository']
+    push_data = docker_data['push_data']
     return {
         'username': 'Docker Hub',
-        'text': '<{}|{}> built successfully.'.format(repo['repo_url'], repo['repo_name']),
+        'text': '<{}|{}:{}> built successfully.'.format(repo['repo_url'], repo['repo_name'], push_data['tag']),
         'icon_url': docker_icon_url
     }
 
